@@ -4,6 +4,8 @@ public class Main {
     public final static int CURRENTYear = LocalDate.now().getYear();
     public static void main(String[] args) {
     printLeapOrNorLeapYear(2029);
+    printVersionOS(2022,1);
+    printCalculateDeliveryTime(34);
     }
     public static boolean isLeapYear(int year) {
         return year % 4==0 && year%100 !=0 || year%400==0;
@@ -31,4 +33,8 @@ public class Main {
             System.out.println(" Установите облегченную версию для вашего "+getVersionOS (versionOS));
         }
     }
+    public static void printCalculateDeliveryTime (int distance) {
+        System.out.println(" Время доставки равно" +((distance+19)/40+1));
+    }
+
 }
